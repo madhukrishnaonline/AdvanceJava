@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>Session_Id_proj-01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>GetSessionId</display-name>
+    <servlet-name>GetSessionId</servlet-name>
+    <servlet-class>session.GetSessionId</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetSessionId</servlet-name>
+    <url-pattern>/get</url-pattern>
+  </servlet-mapping>
+</web-app>
