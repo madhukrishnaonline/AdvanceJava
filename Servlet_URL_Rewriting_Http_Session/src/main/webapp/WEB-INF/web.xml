@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>Servlet_URL_Rewriting_Http_Session</display-name>
+	<welcome-file-list>
+		<welcome-file>hostel.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>SetURL</display-name>
+		<servlet-name>SetURL</servlet-name>
+		<servlet-class>url.SetURL</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SetURL</servlet-name>
+		<url-pattern>/set</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>GetURL</display-name>
+		<servlet-name>GetURL</servlet-name>
+		<servlet-class>url.GetURL</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetURL</servlet-name>
+		<url-pattern>/get</url-pattern>
+	</servlet-mapping>
+</web-app>
